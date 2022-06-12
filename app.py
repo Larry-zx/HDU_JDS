@@ -9,7 +9,7 @@ sg.theme('GreenMono')
 while True:
     i = random.randint(0,248)
     layout = [
-        [sg.Text(dict[i]['tm'], size=(64, 2), font=20, text_color='Black', auto_size_text=True)],
+        [sg.Text(dict[i]['tm'], size=(64, 3), font=20, text_color='Black', auto_size_text=True)],
         [sg.Text(dict[i]['xs'], size=(64, 5), font=20, text_color='navy')],
         [sg.Button(' A ', key="A", font=20), sg.Button(' B ', key="B", font=20),sg.Button(' C ', key="C", font=20),sg.Button(' D ', key="D", font=20),],
         [sg.Text("正确率:%d/%d"%(acc,count) , size=(64, 1), font=30, text_color='black')],
