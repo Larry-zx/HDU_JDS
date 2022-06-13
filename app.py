@@ -49,6 +49,12 @@ while True:
         break
     answer = dict[i]['an']
     if event!=answer:
+        # 记录错题
+        with open('错题本.txt', 'a') as wrong_fp:
+            wrong_fp.write(dict[i]['tm'] + '\n')
+            wrong_fp.write(dict[i]['xs'] + '\n')
+            wrong_fp.write('正确答案: %s ' % (answer) + '\n\n')
+
         str = '正确答案是: %s '%(answer)
         layout_ = [
             [sg.Text(dict[i]['tm'], size=(64, 2), font=20, text_color='Black', auto_size_text=True)],
