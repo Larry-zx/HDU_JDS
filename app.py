@@ -30,10 +30,10 @@ acc = 0
 i=-1
 while True:
     if mode == 'random':
-        i = random.randint(0, 248)
+        i = random.randint(0, 288)
     else:
         i += 1
-        if i > 248:
+        if i > 287:
             break
     layout = [
         [sg.Text(dict[i]['tm'], size=(64, 3), font=20, text_color='Black', auto_size_text=True)],
