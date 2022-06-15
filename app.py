@@ -27,7 +27,6 @@ elif event=='3':
     mode = 'mistake'
     mistake_fp = open('source/错题编号.txt','r')
     mistake_list = mistake_fp.readline().split(',')
-    print(mistake_list)
     with open('source/错题编号.txt','w') as fp:
         fp.write('')
 else:
